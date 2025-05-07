@@ -99,22 +99,20 @@ footer p {
     }
 }
 
-/* Kontener dla logo */
+/* Logo kontener */
 .logo-container {
-    display: inline-block;         /* Logo obok innych elementów */
-    padding: 10px;                 /* Zmniejszamy odstęp wokół logo */
-    background-color: white;      /* Tło tylko pod logo */
-    border-radius: 50%;           /* Zaokrąglenie kontenera */
-    width: 100px;                 /* Szerokość kontenera - dostosuj */
-    height: 100px;                /* Wysokość kontenera - dostosuj */
-    overflow: hidden;             /* Usuwa nadmiar tła */
-    text-align: center;           /* Wyrównanie logo na środku */
-    margin: 0 auto;               /* Wyśrodkowanie kontenera */
+    display: inline-block;
+    width: 100px;               /* Ustaw rozmiar kontenera na 100px x 100px */
+    height: 100px;
+    background-color: white;    /* Białe tło */
+    border-radius: 50%;         /* Okrągły kształt */
+    padding: 10px;              /* Mały margines wokół logo */
+    text-align: center;         /* Wyśrodkowanie */
 }
 
-/* Samo logo */
+/* Logo */
 .logo-container img {
-    width: 100%;                  /* Logo wypełnia cały kontener */
-    height: auto;                 /* Utrzymanie proporcji logo */
-    display: block;               /* Usuwa marginesy wokół obrazu */
+    width: 100%;                /* Logo wypełnia kontener */
+    height: auto;               /* Utrzymanie proporcji */
+    display: block;             /* Usunięcie marginesów wokół logo */
 }
