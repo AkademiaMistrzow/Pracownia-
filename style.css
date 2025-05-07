@@ -1,50 +1,22 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff0f4;
-  color: #333;
-  line-height: 1.6;
+  background-color: #fdfaf7;
+  color: #2c3e50;
+  font-family: sans-serif;
 }
 
-header {
-  background-color: #EABEC3;
-  padding: 20px;
-  text-align: center;
+a {
+  color: #305a91;
 }
 
-.logo {
-  height: 50px;
-  margin-bottom: 10px;
+header, nav, footer {
+  background-color: #eaf2f9;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+button, .btn, .highlight {
+  background-color: #7fa6c8;
+  color: white;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #6392C6;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px;
-  max-width: 800px;
-  margin: auto;
-  background-color: #ffffffcc;
-  border-radius: 8px;
-  margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
+h1, h2, h3 {
+  color: #7a3e48;
 }
