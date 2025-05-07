@@ -99,16 +99,20 @@ footer p {
     }
 }
 
+/* Kontener dla logo */
 .logo-container {
-  
-    display: inline-block;
-    background-color: white;  /* Tło tylko pod logo */
-    padding: 10px;            /* Odstęp wokół logo */
-    border-radius: 50%;       /* Zaokrąglenie rogów, żeby dopasować do kształtu logo */
+    display: inline-block;        /* Logo obok innych elementów, nie w nowym wierszu */
+    padding: 8px;                 /* Odstęp wokół logo */
+    background-color: white;     /* Tło tylko pod logo */
+    border-radius: 50%;          /* Zaokrąglone rogi (w przypadku koła) */
+    width: auto;                 /* Automatyczna szerokość kontenera */
+    height: auto;                /* Automatyczna wysokość */
 }
 
+/* Samo logo */
 .logo-container img {
-    width: 100%;              /* Dopasowanie szerokości logo do kontenera */
-    height: auto;             /* Utrzymanie proporcji logo */
-    display: block;           /* Zapobiega marginesowi poniżej obrazu */
+    max-width: 100%;              /* Logo dopasowane do kontenera */
+    height: auto;                 /* Utrzymanie proporcji */
+    display: block;               /* Usuwa marginesy wokół obrazu */
+    border-radius: 50%;          /* Jeśli logo jest okrągłe, to i logo będzie miało zaokrąglone rogi */
 }
