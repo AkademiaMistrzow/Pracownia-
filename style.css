@@ -100,7 +100,7 @@ footer p {
 }
 
 .logo-container {
-    background-color: white;  /* Tło tylko pod logo */
+    background-color: white;  /* Tło tylko pod okrąg */
     display: inline-block;    /* Dopasowanie logo do jego rozmiaru */
     padding: 8px;             /* Odstęp wokół logo */
     border-radius: 8px;       /* Zaokrąglone rogi */
