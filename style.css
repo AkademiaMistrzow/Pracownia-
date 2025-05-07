@@ -101,12 +101,14 @@ footer p {
 
 .logo-container {
   
-    max-width: 80px;         /* Maksymalna szerokość logo */
-    max-height: 80px;        /* Maksymalna wysokość logo */
-    overflow: hidden;         /* Usuwa nadmiar tła, jeśli logo jest nierówne */
+    display: inline-block;
+    background-color: white;  /* Tło tylko pod logo */
+    padding: 10px;            /* Odstęp wokół logo */
+    border-radius: 50%;       /* Zaokrąglenie rogów, żeby dopasować do kształtu logo */
 }
 
 .logo-container img {
-    width: 100%;              /* Dostosowuje szerokość do kontenera */
-    height: auto;             /* Utrzymuje proporcje logo */
+    width: 100%;              /* Dopasowanie szerokości logo do kontenera */
+    height: auto;             /* Utrzymanie proporcji logo */
+    display: block;           /* Zapobiega marginesowi poniżej obrazu */
 }
