@@ -102,18 +102,18 @@ footer p {
 /* Kontener dla logo */
 .logo-container {
     display: inline-block;        /* Logo obok innych elementów */
-    padding: 5px;                 /* Zmniejszamy odstęp wokół logo */
+    padding: 5px;                 /* Zmniejszenie marginesu wokół logo */
     background-color: white;     /* Tło tylko pod logo */
     border-radius: 50%;          /* Zaokrąglenie kontenera */
-    width: 150px;                /* Stała szerokość kontenera */
-    height: 150px;               /* Stała wysokość kontenera */
-    overflow: hidden;            /* Usuwa nadmiar tła, jeśli logo wykracza poza kontener */
+    width: 120px;                /* Ustalamy odpowiednią szerokość kontenera */
+    height: 120px;               /* Ustalamy wysokość kontenera */
+    overflow: hidden;            /* Usuwa nadmiar tła */
     text-align: center;          /* Wyrównanie logo na środku */
 }
 
 /* Samo logo */
 .logo-container img {
-    width: 120px;                /* Zwiększamy rozmiar logo */
-    height: auto;                /* Utrzymanie proporcji logo */
-    display: block;              /* Usuwa marginesy wokół obrazu */
+    width: 100%;                  /* Dopasowanie szerokości logo do kontenera */
+    height: auto;                 /* Utrzymanie proporcji logo */
+    display: block;               /* Usuwa marginesy wokół obrazu */
 }
