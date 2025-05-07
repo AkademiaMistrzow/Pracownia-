@@ -20,3 +20,25 @@ button, .btn, .highlight {
 h1, h2, h3 {
   color: #7a3e48;
 }
+body {
+  background-color: #fdfaf7;
+  color: #2c3e50;
+  font-family: sans-serif;
+}
+
+a {
+  color: #305a91;
+}
+
+header, nav, footer {
+  background-color: #eaf2f9;
+}
+
+button, .btn, .highlight {
+  background-color: #7fa6c8;
+  color: white;
+}
+
+h1, h2, h3 {
+  color: #7a3e48;
+}
