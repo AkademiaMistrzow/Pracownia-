@@ -42,3 +42,9 @@ button, .btn, .highlight {
 h1, h2, h3 {
   color: #7a3e48;
 }
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
