@@ -100,8 +100,16 @@ footer p {
 }
 
 .logo-container {
-    background-color: white;
-    display: inline-block;
-    padding: 8px;
-    border-radius: 8px;
+    background-color: white;  /* Tło tylko pod logo */
+    display: inline-block;    /* Dopasowanie logo do jego rozmiaru */
+    padding: 8px;             /* Odstęp wokół logo */
+    border-radius: 8px;       /* Zaokrąglone rogi */
+    max-width: 150px;         /* Maksymalna szerokość logo */
+    max-height: 150px;        /* Maksymalna wysokość logo */
+    overflow: hidden;         /* Usuwa nadmiar tła, jeśli logo jest nierówne */
+}
+
+.logo-container img {
+    width: 100%;              /* Dostosowuje szerokość do kontenera */
+    height: auto;             /* Utrzymuje proporcje logo */
 }
