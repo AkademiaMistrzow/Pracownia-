@@ -1,56 +1,490 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Martadzikiewicz.pl</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="img/Logo.png" alt="Logo" />
-        </div>
+<html lang="en">
+    <head>
+        <meta
+            name="ahrefs-site-verification"
+            content=""
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Gabinet psychoterapii w Rumi i Wejherowie. Pracownia Rozwoju Marta Dzikiewicz"
+        />
+        <meta
+            name="keywords"
+            content="psychoterapia rumia, psychoterapeuta rumia, psychoterapia wejherowo, psychoterapeuta wejherowo"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" href="images/favicon.ico" />
+        <link rel="preload" as="image" href="images/przedszkole_rumia.webp" />
+        <title>Psychoterapeuta Rumia, Wejherowo Marta Dzikiewicz</title>
+
+        <!-- <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Psychoterapeuta Rumia, Wejherowo Marta Dzikiewicz",
+              "telephone": "+48 509 368 750",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "06:30",
+                  "closes": "18:00"
+                }
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rumia",
+                "postalCode": "84-230",
+                "streetAddress": "Żwirki i Wigury 48",
+                "addressCountry": "PL"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "28"
+              },
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Beata Jurkiewicz",
+                    "jobTitle": "Rodzic"
+                  },
+                  "datePublished": "2024-05-19",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                  },
+                  "reviewBody": "Akademia Mistrzów Zabawy to miejsce niezwykłe, absolutnie wyjątkowe. Tutaj KAŻDE dziecko jest szczerze kochane i szanowane, a rodzice mogą być spokojni o doskonałą opiekę nad pociechami!"
+                },
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Karolina Czarnecka",
+                    "jobTitle": "Rodzic"
+                  },
+                  "datePublished": "2022-02-25",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                  },
+                  "reviewBody": "Super przedszkole. Mnóstwo kreatywnych zajęć, najlepsza opieka. Panie opiekunki z pasją i ogromnym sercem do dzieci. Moja córka mówi \"Kocham moje popole\" 😉 Dziecko przeszczęśliwe, a to najważniejsze. Z całego serca polecamy."
+                }
+              ],
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=100063579372462"
+              ]
+            }
+            </script> -->
+            
+            
+    </head>
+    <body>
         <nav>
-            <ul>
-                <li><a href="#home">Strona Główna</a></li>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#offer">Oferta</a></li>
-                <li><a href="#pricing">Cennik</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+            <div class="openMenu">
+                <img
+                    src="images/menu_icon.svg"
+                    alt="Mobile menu icon"
+                    width="32px"
+                    height="32px"
+                />
+            </div>
+            <ul class="mainMenu">
+                <li><a href="/">Start</a></li>
+                <li><a href="#omnie">O mnie</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#cennik">Cennik</a></li>
+                <li><a href="#contact" id="menu-contact">Kontakt</a></li>
+                <li><a href="tel:663605106" id="call">663 605 106</a></li>
+                <li>
+                    <div class="closeMenu"><img src="images/close_icon.svg" width="24px" height="24px" alt="Close menu icon"></i></div>
+                </li>
+                <li>
+                    <span class="icons">
+                        <a
+                            href="https://www.facebook.com/people/"
+                            aria-label="Facebook"
+                        >
+                            <img src="images/fb.svg" alt="Facebook" width="32px" height="32px">
+                        </a>
+                    </span>
+                </li>
             </ul>
         </nav>
-    </header>
 
-    <section id="home" class="main-section">
-        <div class="content">
-            <h1>Witaj na mojej stronie!</h1>
-            <p>Tworzę piękne strony internetowe</p>
-        </div>
-    </section>
+        <header>
+            <h1>Psychoterapeuta Rumia, Wejherowo</h1>
+            <h2 class="header__h2">Marta Dzikiewicz</h2>
+        </header>
 
-    <section id="about">
-        <h2>O mnie</h2>
-        <p>Jestem pasjonatką tworzenia stron. Uwielbiam minimalizm i ciepły styl.</p>
-    </section>
+        <main>
+            <section id="omnie">
+                <h2>O mnie</h2>
+                <div class="content">
+                    <a
+                        data-fancybox="gallery1"
+                        data-src="img/psychoterapia_rumia.webp"
+                    >
+                        <img
+                            src="img/psychoterapia_rumia.webp"
+                            class="content__img"
+                            alt="Przedszkole Rumia"
+                        />
+                    </a>
+                    <div>
+                        <p><b> Cześć</b></p>
+                        <p>
+                            Nazywam się Marta Dzikiewicz, jestem psychoterapeutą w nurcie integracyjnym w trakcie
+                            szkolenia, nauczycielem, trenerem TUS, terapeutą ręki oraz trenerem treningu uważności.
+                        </p>
+                        <p>
+                            W pracy z dziećmi, młodzieżą i dorosłymi stawiam na podejście holistyczne – uważam, że aby
+                            efektywnie i skutecznie wspierać rozwój i przezwyciężać trudności, należy zadbać o całość
+                            człowieka.
+                        </p>
+                        <p>
+                            Każdy obszar Twojego życia, emocji, potencjału i doświadczeń wpływa na pozostałe,
+                            dlatego skuteczna pomoc, to dbałość o pełną równowagę organizmu i poczucie harmonii w życiu.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="offer">
-        <h2>Oferta</h2>
-        <p>Projektuję strony dopasowane do Ciebie.</p>
-    </section>
+            <section>
+                <div class="content">
+                    <div>
+                        <p>
+                            Towarzyszę i wspieram w rozwiązywaniu trudności, odkrywaniu własnego potencjału, rozwijaniu
+                            umiejętności społecznych, budowaniu poczucia własnej wartości u dzieci, młodzieży i dorosłych.
+                            Jestem przekonana, że każda osoba ma w sobie siłę do zmiany. <br><br>
+                            Pomogę Ci ją odnaleźć i wprowadzić realną zmianę w Twoim życiu.<br><br>
+                            Moja praca jest w stałej superwizji, co zapewnia jej zgodność z najlepszymi standardami
+                            terapeutycznymi.<br><br>
+                             Jeśli czujesz, że to przestrzeń dla Ciebie<br><br>
+                             Jeśli chcesz przyjrzeć się swojej sytuacji<br><br>
+                             Jeśli czujesz, że to dobry moment na pracę nad sobą<br><br>
+                             Jeśli jesteś gotowy / gotowa na zmianę<br><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="pricing">
-        <h2>Cennik</h2>
-        <p>Skontaktuj się, by poznać ofertę.</p>
-    </section>
+            <section>
+                <h2>
+                    Praca z dziećmi i młodzieżą
+                </h2>
+                <div class="content">
+                    <a
+                        data-fancybox="gallery1"
+                        data-src="img/psychoterapia_wejherowo.webp"
+                    >
+                        <img
+                            src="img/psychoterapia_wejherowo.webp"
+                            class="content__img"
+                            loading="lazy"
+                            alt="Niepubliczne przedszkole Rumia"
+                        />
+                    </a>
+                    <div>
+                        <p>
+                            – wsparcie terapeutyczne <br><br>
+                            – rozwijanie umiejętności społecznych (TUS)<br><br>
+                            – terapia ręki (holistyczna praca z ciałem i czuciem)<br><br>
+                            – budowanie poczucia własnej wartości i sprawczości<br><br>
+                            – praca nad regulacją emocji, koncentracją, relacjami<br><br>
+                            – uważne towarzyszenie dziecku w jego rozwoju <br><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Wyślij wiadomość przez formularz kontaktowy lub mailowo.</p>
-    </section>
+            <section>
+                <h2>
+                    Praca z dorosłymi
+                </h2>
+                <div class="content">
+                    <a
+                        data-fancybox="gallery1"
+                        data-src="img/psychoterapeuta_wejherowo.webp"
+                    >
+                        <img
+                            src="img/psychoterapeuta_wejherowo.webp"
+                            class="content__img"
+                            loading="lazy"
+                            alt="Prywante przedszkole w Rumii"
+                        />
+                    </a>
+                    <div>
+                        <p>
+                            – psychoterapia indywidualna w nurcie integracyjnym (terapia online) <br><br>
+                            – wsparcie w zaburzeniach lękowych depresyjnych, trudnościach emocjonalnych, relacyjnych i
+                            osobistych <br><br>
+                            – praca z doświadczeniami trudnymi i traumatycznymi (również z okresu dzieciństwa)<br><br>
+                            – towarzyszenie w budowaniu poczucia wartości, równowagi i sprawczości<br><br>
+                            – warsztaty dla rodziców: komunikacja, emocje, granice, wychowanie bez kar<br><br>
+                            – indywidualne podejście z uważnością na osobistą historię i potrzeby<br><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; 2025 Marta Dzikiewicz</p>
-    </footer>
-</body>
+            <section>
+                <h2>Praca z rodziną / systemowo</h2>
+                <div class="content">
+                    <a
+                        data-fancybox="gallery1"
+                        data-src="img/psychoterapeuta_rumia.webp"
+                    >
+                        <img
+                            src="img/psychoterapeuta_rumia.webp"
+                            class="content__img"
+                            loading="lazy"
+                            alt="Prywatne przedszkole Rumia"
+                        />
+                    </a>
+                    <div>
+                        <p>
+                            – konsultacje wychowawcze (stacjonarnie i online) <br><br>
+                            – wsparcie w budowaniu zdrowej komunikacji i granic <br><br>
+                            – praca nad relacjami rodzic – dziecko <br><br>
+                            – spojrzenie na rodzinę jako system, w którym każda zmiana ma znaczenie <br><br>
+                            – wspólne poszukiwanie rozwiązań, które służą wszystkim członkom rodziny <br><br>
+                        </p>
+
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="content-centered">
+                    <b>Napisz, zadzwoń, porozmawiajmy</b> <br><br>
+                    Zacznij swoją drogę do zmiany – napisz do mnie, umów się na konsultację i wspólnie znajdźmy
+                    najlepsze dla Ciebie rozwiązania!
+                </div>
+            </section>
+
+            <section id="oferta">
+                <h2>Trening Umiejętności Społecznych</h2>
+                <div class="content">
+                    <div>
+                        <p>
+                            Trening Umiejętności Społecznych, to forma pracy indywidualnej lub grupowej, dla każdej grupy
+                            wiekowej, ukierunkowana na uczenie się dobrego funkcjonowania społecznego. Tworzenia i rozwijania
+                            relacji z samym sobą i innymi osobami. Oraz niwelowania trudności występujących w tym obszarze.
+                        </p>
+                        <p>
+                            Terapeutyczne oddziaływanie TUS rozwija i usprawnia następujące kompetencje: <br><br>
+                            - komunikacja (np. umiejętność słuchania, reagowania na wypowiedzi innych, zadawanie pytań),<br><br>
+                            - umiejętności prospołeczne (m.in. nawiązywanie kontaktu wzrokowego, wytyczanie i utrzymywanie
+                            granic, zauważanie i szanowanie granic innych osób),<br><br>
+                            - radzenie sobie w trudnych sytuacjach (np. nauka asertywności, przyjmowania i przeżywania sukcesów
+                            i porażek, proszenie o pomoc, rozwiązywanie konfliktów),<br><br>
+                            - oraz takie sfery, jak emocje (rozpoznawanie, nazywanie, stopniowanie, wyrażanie ich w sposób
+                            społecznie akceptowalny) <br><br>
+                            - budowanie własnej tożsamości (m.in. odkrywanie swoich cech, mocnych
+                            i słabszych stron, budowanie poczucia własnej wartości).
+                        </p>
+                        <p>
+                            Autor treningu umiejętności społecznych, Alfred Goldstein, zbudował swoją metodę na założeniu, że
+                            niepożądane zachowania przejawiane przez osobę, są ukształtowane na drodze kontaktów z
+                            otoczeniem - a jeśli tak, to możliwe jest także, ukształtowanie przeciwstawnych wobec nich, właściwych
+                            zachowań, na przykład poprzez trening umiejętności społecznych.
+                        </p>
+                        <p>
+                            Najważniejszymi korzyściami uczestniczenia w zajęciach TUS, są:<br><br>
+                            - zwiększona zdolność osób do tworzenia i utrzymywania znaczących relacji,<br><br>
+                            - nauka skutecznej komunikacji, aktywnego słuchania i adekwatnego reagowania,<br><br>
+                            - umiejętność rozwiązywania konfliktów,<br><br>
+                            - zdolność osób do nawiązywania silnych więzi z innymi i pielęgnowania zdrowych relacji
+                            międzyludzkich.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Terapia ręki</h2>
+                <div class="content">
+                    <div>
+                        <p>
+                            Ręka to część ciała o dużej złożoności, zarówno pod względem budowy jak i funkcji. Oprócz zadań
+                            związanych z trzymaniem, podnoszeniem czy przesuwaniem, odpowiedzialna jest za pisanie i kontrolę
+                            grafomotoryczną, precyzyjne ruchy i małą motorykę oraz za skomplikowane mechanizmy czuciowe.
+                            Można powiedzieć, że to jej sprawność determinuje poziom funkcjonowania człowieka i jego
+                            samodzielność. W naszym mózgu obszar odpowiedzialny za ruchy ręki oraz odbieranie, przetwarzanie i
+                            reagowanie na bodźce czuciowe jest bardzo duży. 
+                        </p>
+                        <p>
+                            Dodatkowo cały system nerwowy kontrolujący ruch,
+                            a więc jego planowanie, rozpoczęcie, wykonanie, koordynowanie i zakończenie to niezwykle
+                            skomplikowana sieć, która, aby działała prawidłowo, musi na każdym poziomie być precyzyjna i
+                            odpowiednio przygotowana do realizacji swoich zadań. Daje to bardzo wyraźny obraz tego, jak istotna,
+                            precyzyjna i bardzo skomplikowana jest praca naszych rąk.                             
+                        </p>
+                        <p>
+                            Niestety z różnych przyczyn – często zdrowotnych – praca i umiejętności naszych rąk mogą zostać
+                            zahamowane, albo w ogóle rozwój funkcji ręki nie wykształci się. Ma to miejsce np. przy uszkodzeniach
+                            mózgu, przy nieprawidłowej budowie ręki, zaburzeniach integracji sensorycznej lub w wyniku złych
+                            nawyków, albo niepełnosprawności intelektualnej. W takim wypadku wskazana jest bardzo różnorodna
+                            stymulacja, którą jest właśnie terapia ręki.                            
+                        </p>
+                        <p>
+                            Ma ona za zadanie – przy zaangażowaniu całej kończyny
+                            górnej – naukę i doskonalenie różnych czynności i ruchów precyzyjnych. Przy takiej pracy nie można
+                            wykluczyć udziału tułowia, głowy i właściwie całego ciała, ważną rolę pełni również zdolność do czucia
+                            powierzchownego i głębokiego. To współpraca pomiędzy wszystkimi elementami przynosi największe
+                            efekty terapeutyczne, uczy stabilizacji całego ciała przy jednoczesnej swobodnej pracy całej kończyny.  
+                            
+                            Wskazaniem do terapii ręki, zarówno dla dzieci, jak i dla osób dorosłych, są sytuacje, podczas których
+                            występują:<br><br>
+                            - trudności w planowaniu ruchowym, <br><br>
+
+                            - problemy z koordynacją pracy obu rąk, <br><br>
+                            - problemy z nauką samoobsługi, jak ubieranie się, zapinanie guzików, <br><br>
+                            - nieadekwatne dostosowanie siły i szybkości ruchów do wykonywanej czynności,  <br><br>
+                            - zaburzenia sprawności grafomotorycznej – dziecko nie lubi lub nie umie wycinać, rysować,
+                            malować, ma niedokładne i niestaranne pismo, każda nowa forma zajęć z wykorzystaniem
+                            umiejętności rąk nie sprawia dziecku przyjemności,  <br><br>
+
+                            - trudności w trzymaniu kredek czy ołówka, przedmioty wypadają z dłoni lub przebijają kartkę pod
+                            ich naciskiem, <br><br>
+
+                            - trudności z koncentracją, <br><br>
+
+                            - nieprawidłowa postawa ciała, <br><br>
+
+                            - niechęć do dotykania różnych faktur, <br><br>
+
+                            - zaburzenia koordynacji oko–ręka, <br><br>
+
+                            - zbyt wolne lub zbyt szybkie tempo wykonywania różnych czynności manualnych, co prowadzi do
+                            niestaranności, <br><br>
+
+                            - zaburzenia napięcia mięśniowego w obrębie obręczy barkowej lub całego ciała (wzmożone bądź
+                            obniżone napięcie mięśniowe). 
+                      
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="cennik">
+                <h2>Cennik</h2>
+                <div class="content">
+                    <div>
+                        <p> 
+                            1. Psychoterapia indywidualna dla dorosłych (50 minut - online) <br>
+                            Cena za sesję: 150 zł<br>
+                            Sesja online dostosowana do Twoich indywidualnych potrzeb.
+                        </p>
+                        <p>
+                            2. Pakiety psychoterapii indywidualnej (online)<br>
+                            Pakiet 10 sesji – 1 350 zł (zamiast 1 500 zł)
+                        </p>
+                        <p>
+                            3. Terapia dzieci i młodzieży (50 minut - online)<br>
+                            Cena za sesję: 150 zł<br>
+                            Sesje online dostosowane do potrzeb dziecka lub młodzieży.<br>
+                        </p>
+                        <p>
+                            4. Pakiety terapii dla dzieci i młodzieży (online)<br>
+                            Pakiet 10 sesji – 1 350 zł (zamiast 1 500 zł)
+                        </p>
+                        <p>
+                            5. Warsztaty dla rodziców (120 minut - stacjonarne)<br>
+                            Cena za warsztat: 280 zł<br>
+                            Warsztaty na temat: komunikacja, emocje, granice, wychowanie bez kar.
+                        </p>
+                        <p>
+                            Promocje<br>
+                            • Pierwsza sesja (dla nowych pacjentów): 130 zł<br>
+                            • Zniżka 10% na każdą kolejną sesję po zakupie pakietu 10 sesji.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="contact">
+                <h2>Kontakt Psychoterapia Rumia, Wejherowo</h2>
+
+                <p>
+                    Jak umówić się na sesję?<br><br>
+                    • Napisz do mnie: <a href="mailto:pracowniarozwojumd@gmail.com" class="content__link">pracowniarozwojumd@gmail.com</a> <br>
+                    • Zadzwoń:  <a href="tel:663605106" class="content__link" >663 605 106</a> <br>
+                    Sesje odbywają się online, w dogodnym dla Ciebie terminie.<br><br>
+                </p>
+
+                <p>
+                    Dlaczego warto?<br><br>
+                    Profesjonalizm – Praca w zgodzie z najlepszymi standardami, pod stałą superwizją.<br>
+                    Elastyczność – Terapia online, która daje wygodę i dostępność.<br><br>
+                </p>
+
+                <p>
+                    Chcesz rozpocząć swoją drogę do zmiany?<br><br>
+                    Zapraszam do kontaktu – wspólnie znajdźmy najlepsze rozwiązanie dla Ciebie.<br><br>
+                </p>
+
+                <p>
+                    Pracownia Rozwoju<br />
+                    Marta Dzikiewicz
+                </p>
+
+
+                <!-- <p>
+                    Facebook:
+                    <a
+                        href="https://www.facebook.com/people/"
+                        target="_blank"
+                        class="link"
+                    >
+                        FB
+                    </a>
+                </p> -->
+                <!-- <p>
+                    Google Maps:
+                    <a
+                        href="https://maps.app.goo.gl/"
+                        target="_blank"
+                        class="link"
+                    >
+                        Maps
+                    </a>
+                </p> -->
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Psychoterapeuta Rumia, Wejherowo Pracownia Rozwoju Marta Dzikiewicz</p>
+        </footer>
+        <script src="js/script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"
+            async
+        ></script>
+        <script>
+            (function () {
+                const cssFa = document.createElement('link');
+                cssFa.href =
+                    'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css';
+                cssFa.rel = 'stylesheet';
+                cssFa.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(cssFa);
+            })();
+        </script>
+    </body>
 </html>
