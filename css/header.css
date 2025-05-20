@@ -37,7 +37,7 @@
   left: 50%;
   transform: translate(-50%, -50%); /* Center image horizontally and vertically */
   width: auto;
-  height: 100px; /* Adjust depending on your desired logo size */
+  height: 150px; /* Adjust depending on your desired logo size */
 }
 
 .header__h2 {
