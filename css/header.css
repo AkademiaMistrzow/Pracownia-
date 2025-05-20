@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
   .logo-overlap {
-    transform: translate(-100%, -50%);
+    transform: translate(-150%, -50%);
   }
 }
 
