@@ -17,7 +17,7 @@
 
 .hero-header {
   position: relative;
-  height: 300px; /* Adjust as needed */
+  height: 300px; 
   overflow: visible;
   text-align: center;
 }
@@ -35,14 +35,18 @@
   position: absolute;
   top: 50%; /* Starts at halfway down header */
   left: 50%;
-  transform: translate(-80%, -50%); /* Center image horizontally and vertically */
-  /* width: auto;
-  height: 150px; */
+  transform: translate(-200%, -50%); /* Center image horizontally and vertically */
   width: 150px;           /* Adjust size as needed */
   height: 150px;          /* Keep equal width & height for a circle */
   border-radius: 50%;     /* Makes it fully round */
   object-fit: cover;      /* Ensures image fills the circle without distortion */
   box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Optional: adds soft shadow */
+}
+
+@media (max-width: 768px) {
+  .logo-overlap {
+    transform: translate(-100%, -50%);
+  }
 }
 
 .header__h2 {
