@@ -35,7 +35,7 @@
   position: absolute;
   top: 50%; /* Starts at halfway down header */
   left: 50%;
-  transform: translate(-50%, -50%); /* Center image horizontally and vertically */
+  transform: translate(-75%, -50%); /* Center image horizontally and vertically */
   /* width: auto;
   height: 150px; */
   width: 150px;           /* Adjust size as needed */
