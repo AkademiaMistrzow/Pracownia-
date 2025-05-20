@@ -40,7 +40,7 @@
   height: 150px;          /* Keep equal width & height for a circle */
   border-radius: 50%;     /* Makes it fully round */
   object-fit: cover;      /* Ensures image fills the circle without distortion */
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Optional: adds soft shadow */
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.2);  */
 }
 
 @media (max-width: 768px) {
