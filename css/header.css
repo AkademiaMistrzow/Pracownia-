@@ -5,14 +5,39 @@
   padding: 2rem;
 } */
 
-header {
-  background-image: url('../img/psychoterapeuta.jpg'); /* Replace with your actual image path */
-  background-size: cover;       /* Makes the image cover the entire header */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating */
+/* header {
+  background-image: url('../img/psychoterapeuta.jpg');
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat; 
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 2rem;
+} */
+
+.hero-header {
+  position: relative;
+  height: 300px; /* Adjust as needed */
+  overflow: visible;
+  text-align: center;
+}
+
+.background-layer {
+  background-image: url('../img/psychoterapeuta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%; /* Top half with background */
+  width: 100%;
+}
+
+.logo-overlap {
+  position: absolute;
+  top: 50%; /* Starts at halfway down header */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center image horizontally and vertically */
+  width: auto;
+  height: 100px; /* Adjust depending on your desired logo size */
 }
 
 .header__h2 {
