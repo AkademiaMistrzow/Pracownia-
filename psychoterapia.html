@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psychoterapia online – Marta Dzikiewicz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    h1 { color: #2a4b4f; }
+    label { display: block; margin-top: 1em; font-weight: bold; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      background: #2a4b4f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3e6970;
+    }
+  </style>
+</head>
+<body>
+  <h1>Psychoterapia online</h1>
+  <p>Ciepło witam Cię w przestrzeni dedykowanej psychoterapii online.</p>
+
+  <p>Pracuję w nurcie integracyjnym, w bezpiecznej, wspierającej relacji, z poszanowaniem Twojego tempa. Jeśli czujesz gotowość, by rozpocząć pracę nad sobą – zapraszam.</p>
+
+  <p>Wypełnij poniższy formularz, jeśli chcesz umówić się na pierwszą sesję lub zadać pytanie.</p>
+
+  <form name="formularz-terapia" netlify>
+    <label for="name">Imię</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adres e-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Napisz, czego potrzebujesz lub co Cię sprowadza</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Wyślij</button>
+  </form>
+
+  <p style="margin-top: 30px; font-size: 0.9em; color: #555;">
+    Wszystkie wiadomości trafiają bezpośrednio do mnie. Odpowiadam w ciągu 2 dni roboczych.
+  </p>
+</body>
+</html>
