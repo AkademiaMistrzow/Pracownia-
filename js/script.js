@@ -5,6 +5,7 @@ const menuContact = document.querySelector('#menu-contact');
 const menuOmnie = document.querySelector('#menu-omnie');
 const menuOferta = document.querySelector('#menu-oferta');
 const menuCennik = document.querySelector('#menu-cennik');
+const menuOnline = document.querySelector('#menu-online');
 
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
@@ -28,6 +29,12 @@ menuOferta.addEventListener('click', () => {
 });
 
 menuCennik.addEventListener('click', () => {
+    if (window.innerWidth < 800) {
+        close();
+    }
+});
+
+menuOnline.addEventListener('click', () => {
     if (window.innerWidth < 800) {
         close();
     }
