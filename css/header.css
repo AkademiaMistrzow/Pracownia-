@@ -6,7 +6,7 @@
 } */
 
 /* header {
-  background-image: url('../img/psychoterapeuta.jpg');
+  background-image: url('../img/psychoterapeuta%20rumia.jpg');
   background-size: cover;       
   background-position: center; 
   background-repeat: no-repeat; 
@@ -17,13 +17,13 @@
 
 .hero-header {
   position: relative;
-  height: 300px; 
+  height: 300px;
   overflow: visible;
   text-align: center;
 }
 
 .background-layer {
-  background-image: url('../img/psychoterapeuta.jpg');
+  background-image: url("../img/psychoterapeuta%20rumia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,11 +35,14 @@
   position: absolute;
   top: 50%; /* Starts at halfway down header */
   left: 50%;
-  transform: translate(-200%, -50%); /* Center image horizontally and vertically */
-  width: 150px;           /* Adjust size as needed */
-  height: 150px;          /* Keep equal width & height for a circle */
-  border-radius: 50%;     /* Makes it fully round */
-  object-fit: cover;      /* Ensures image fills the circle without distortion */
+  transform: translate(
+    -200%,
+    -50%
+  ); /* Center image horizontally and vertically */
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Keep equal width & height for a circle */
+  border-radius: 50%; /* Makes it fully round */
+  object-fit: cover; /* Ensures image fills the circle without distortion */
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2);  */
 }
 
@@ -50,7 +53,7 @@
 }
 
 .header__h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.75rem;
 }

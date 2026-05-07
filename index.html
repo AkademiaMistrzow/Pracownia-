@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Gabinet psychoterapii w Rumi i Wejherowie. Pracownia Rozwoju Marta Dzikiewicz"
+      content="Gabinet psychoterapii w Rumi. Pracownia Rozwoju Marta Dzikiewicz"
     />
     <meta
       name="keywords"
-      content="psychoterapia rumia, psychoterapeuta rumia, psychoterapia wejherowo, psychoterapeuta wejherowo"
+      content="psychoterapia rumia, psychoterapeuta rumia"
     />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'none';"
+    />
+    <meta
+      property="og:site_name"
+      content="Psychoterapia Rumia Marta Dzikiewicz"
     />
     <link rel="canonical" href="https://martadzikiewicz.pl/" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -38,8 +42,17 @@
       sizes="180x180"
       href="img/apple-touch-icon.png"
     />
-    <link rel="preload" as="image" href="img/psychoterapia_rumia.webp" />
     <title>Psychoterapeuta Rumia Marta Dzikiewicz - Psychoterapia</title>
+
+    <!-- WebSite schema for Google site name -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Psychoterapia Rumia Marta Dzikiewicz",
+        "url": "https://martadzikiewicz.pl/"
+      }
+    </script>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -47,11 +60,11 @@
         "@context": "https://schema.org",
         "@type": ["ProfessionalService", "LocalBusiness"],
         "name": "Pracownia Rozwoju Marta Dzikiewicz",
-        "description": "Gabinet psychoterapii w Rumi i Wejherowie. Psychoterapia indywidualna dzieci, młodzieży i dorosłych. Trening Umiejętności Społecznych, terapia ręki, psychoterapia online.",
+        "description": "Gabinet psychoterapii w Rumi. Psychoterapia indywidualna dzieci, młodzieży i dorosłych. Trening Umiejętności Społecznych, terapia ręki, psychoterapia online.",
         "url": "https://martadzikiewicz.pl/",
         "telephone": "+48513949236",
         "email": "pracowniarozwojumd@gmail.com",
-        "image": "https://martadzikiewicz.pl/img/Logo3.png",
+        "image": "https://martadzikiewicz.pl/img/psychoterapia%20rumia.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ul. Generała Henryka Dąbrowskiego 5/21",
@@ -141,10 +154,10 @@
         />
       </div>
       <ul class="mainMenu">
-        <li><a href="/">Start</a></li>
+        <li><a href="/">Psychoterapia</a></li>
         <li><a href="#omnie" id="menu-omnie">O mnie</a></li>
         <li><a href="#oferta" id="menu-oferta">Oferta</a></li>
-        <li><a href="#online" id="menu-online">Psychoterapia online</a></li>
+        <li><a href="#online" id="menu-online">Online</a></li>
         <li><a href="#cennik" id="menu-cennik">Cennik</a></li>
         <!-- <li>
           <a
@@ -182,7 +195,11 @@
 
     <header class="hero-header">
       <div class="background-layer"></div>
-      <img src="img/Logo3.png" class="logo-overlap" alt="Psychoterapia Rumia" />
+      <img
+        src="img/psychoterapia rumia.png"
+        class="logo-overlap"
+        alt="Psychoterapia Rumia"
+      />
     </header>
 
     <main>
