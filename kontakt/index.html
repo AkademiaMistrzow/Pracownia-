@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formularz kontaktowy - Pracownia Rozwoju Marta Dzikiewicz"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action https://formspree.io; frame-ancestors 'none';"
+    />
+    <link rel="canonical" href="https://martadzikiewicz.pl/kontakt/" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/kontakt.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <title>Formularz kontaktowy - Psychoterapia Rumia</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="mainMenu mainMenu--static">
+        <li><a href="/">Strona główna</a></li>
+        <li><a href="tel:513949236" id="call">513 949 236</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="kontakt-formularz">
+        <h1>Formularz kontaktowy</h1>
+        <p class="contact-intro">
+          Wypełnij formularz, a skontaktuję się z Tobą, aby ustalić dogodny
+          termin konsultacji.
+        </p>
+
+        <form action="https://formspree.io/f/xjkwdwge" method="POST">
+          <label for="name">Imię:</label>
+          <input
+            type="text"
+            id="name"
+            name="imie"
+            autocomplete="given-name"
+            required
+          />
+
+          <label for="age">Wiek:</label>
+          <input
+            type="number"
+            id="age"
+            name="wiek"
+            min="1"
+            max="120"
+            required
+          />
+
+          <label for="topic">Czego dotyczy zgłoszenie:</label>
+          <textarea id="topic" name="zgloszenie" rows="5" required></textarea>
+
+          <label for="mode">Forma spotkań (online/stacjonarnie):</label>
+          <select id="mode" name="forma_spotkan" required>
+            <option value="" selected disabled>Wybierz opcję</option>
+            <option value="online">Online</option>
+            <option value="stacjonarnie">Stacjonarnie</option>
+            <option value="bez_preferencji">Bez preferencji</option>
+          </select>
+
+          <label for="hours">Preferowane godziny:</label>
+          <input
+            type="text"
+            id="hours"
+            name="preferowane_godziny"
+            placeholder="np. pon.-pt. po 17:00"
+            required
+          />
+
+          <label for="email">Adres e-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            autocomplete="email"
+            required
+          />
+
+          <label for="phone">Telefon:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="telefon"
+            autocomplete="tel"
+            required
+          />
+
+          <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Psychoterapeuta Rumia, Wejherowo Pracownia Rozwoju Marta
+        Dzikiewicz
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+#kontakt-formularz {
+  max-width: 760px;
+}
+
+#kontakt-formularz h1 {
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#kontakt-formularz form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+#kontakt-formularz label {
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+#kontakt-formularz input,
+#kontakt-formularz textarea,
+#kontakt-formularz select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+}
+
+#kontakt-formularz textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+#kontakt-formularz button {
+  align-self: flex-start;
+}
+
+.mainMenu--static {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+@media (max-width: 800px) {
+  nav .mainMenu--static {
+    display: flex;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    top: auto;
+    background: transparent;
+  }
+
+  #kontakt-formularz button {
+    width: 100%;
+  }
+}
