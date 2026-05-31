@@ -1,5 +1,6 @@
 #kontakt-formularz {
   max-width: 760px;
+  margin-top: 4rem;
 }
 
 #kontakt-formularz h1 {
@@ -40,7 +41,8 @@
 }
 
 #kontakt-formularz button {
-  align-self: flex-start;
+  align-self: center;
+  margin-bottom: 2rem;
 }
 
 .mainMenu--static {
