@@ -57,7 +57,21 @@
           />
 
           <label for="topic">Czego dotyczy zgłoszenie:</label>
-          <textarea id="topic" name="zgloszenie" rows="5" required></textarea>
+          <select id="topic" name="zgloszenie" required>
+            <option value="" selected disabled>Wybierz temat</option>
+            <option value="psychoterapia_osoby_doroslej">
+              Psychoterapia osoby dorosłej
+            </option>
+            <option value="psychoterapia_par">Psychoterapia par</option>
+            <option value="psychoterapia_dziecka">Psychoterapia dziecka</option>
+            <option value="konsultacja_rodzicielska">
+              Konsultacja rodzicielska
+            </option>
+            <option value="zajecia_terapeutyczne_dla_dziecka">
+              Zajęcia terapeutyczne dla dziecka
+            </option>
+            <option value="inne">Inne</option>
+          </select>
 
           <label for="mode">Forma spotkań (online/stacjonarnie):</label>
           <select id="mode" name="forma_spotkan" required>
