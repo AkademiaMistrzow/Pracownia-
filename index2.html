@@ -499,7 +499,6 @@
         border: 1.5px solid var(--border);
         border-radius: 10px;
         padding: 1.25rem 1.5rem;
-        cursor: pointer;
         transition:
           border-color 0.2s,
           box-shadow 0.2s;
@@ -587,6 +586,14 @@
         margin-bottom: 1.5rem;
       }
 
+      .bottom-cta__actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
       .btn-call {
         display: inline-flex;
         align-items: center;
@@ -603,8 +610,29 @@
         box-shadow: 0 4px 16px rgba(27, 46, 85, 0.3);
       }
 
+      .btn-booksy {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #edf3ff;
+        color: var(--green-dk);
+        font-size: 1.05rem;
+        font-weight: 800;
+        padding: 1rem 2rem;
+        border-radius: var(--radius);
+        border: 1.5px solid #c8d6f0;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+      }
+
       .btn-call:hover {
         background: var(--green-dk);
+        transform: translateY(-2px);
+      }
+
+      .btn-booksy:hover {
+        background: #dfeaff;
         transform: translateY(-2px);
       }
 
@@ -668,6 +696,16 @@
         }
         .trustbar__inner {
           gap: 0.75rem 1.5rem;
+        }
+
+        .bottom-cta__actions {
+          flex-direction: column;
+        }
+
+        .btn-call,
+        .btn-booksy {
+          width: 100%;
+          justify-content: center;
         }
       }
     </style>
@@ -928,8 +966,8 @@
         <p class="section-sub">Wybierz obszar, w którym szukasz wsparcia</p>
 
         <div class="services__grid">
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">🧠</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">🧠</span> -->
             <div>
               <p class="service-card__name">Psychoterapia dorosłych</p>
               <p class="service-card__desc">
@@ -937,10 +975,10 @@
                 online lub stacjonarnie
               </p>
             </div>
-          </a>
+          </div>
 
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">🤝</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">🤝</span> -->
             <div>
               <p class="service-card__name">Psychoterapia par</p>
               <p class="service-card__desc">
@@ -948,10 +986,10 @@
                 związku
               </p>
             </div>
-          </a>
+          </div>
 
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">🦖</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">🦖</span> -->
             <div>
               <p class="service-card__name">Psychoterapia dzieci i młodzieży</p>
               <p class="service-card__desc">
@@ -959,10 +997,10 @@
                 wartości
               </p>
             </div>
-          </a>
+          </div>
 
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">👨‍👩‍👧</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">👨‍👩‍👧</span> -->
             <div>
               <p class="service-card__name">Konsultacja rodzicielska</p>
               <p class="service-card__desc">
@@ -970,10 +1008,10 @@
                 online
               </p>
             </div>
-          </a>
+          </div>
 
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">💬</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">💬</span> -->
             <div>
               <p class="service-card__name">
                 TUS – Trening Umiejętności Społecznych
@@ -982,10 +1020,10 @@
                 Zajęcia grupowe i indywidualne rozwijające kompetencje społeczne
               </p>
             </div>
-          </a>
+          </div>
 
-          <a href="tel:513949236" class="service-card">
-            <span class="service-card__icon" aria-hidden="true">✋</span>
+          <div class="service-card">
+            <!-- <span class="service-card__icon" aria-hidden="true">✋</span> -->
             <div>
               <p class="service-card__name">Terapia ręki</p>
               <p class="service-card__desc">
@@ -993,7 +1031,7 @@
                 min
               </p>
             </div>
-          </a>
+          </div>
         </div>
 
         <div class="long-copy">
@@ -1242,31 +1280,41 @@
       <section class="bottom-cta">
         <h2 class="bottom-cta__title">Gotowy/-a na pierwszy krok?</h2>
         <p class="bottom-cta__sub">
-          Zadzwoń lub wyślij zgłoszenie – oddzwonię i ustalimy termin
+          Zadzwoń, umów wizytę na Booksy lub wybierz konsultację online
         </p>
 
-        <a href="tel:513949236" class="btn-call">
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+        <div class="bottom-cta__actions">
+          <a href="tel:513949236" class="btn-call">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.71a16 16 0 006.29 6.29l1.26-1.26a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            Zadzwoń: 513 949 236
+          </a>
+
+          <a
+            href="https://booksy.com/pl-pl/348693_pracownia-rozwoju-marta-dzikiewicz_psychoterapia_21554_sopot#ba_s=sr_1"
+            class="btn-booksy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Umów na Booksy</a
           >
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.71a16 16 0 006.29 6.29l1.26-1.26a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
-            />
-          </svg>
-          Zadzwoń: 513 949 236
-        </a>
+        </div>
 
         <p class="bottom-cta__address">
-          ul. Generała H. Dąbrowskiego 5/21, Rumia &nbsp;·&nbsp; pon.–pt.
-          9:00–18:00
+          Online &nbsp;·&nbsp; ul. Tatrzańska 19, Sopot &nbsp;·&nbsp; ul.
+          Generała H. Dąbrowskiego 5/21, Rumia &nbsp;·&nbsp; pon.–pt. 9:00–18:00
         </p>
       </section>
     </main>
