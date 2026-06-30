@@ -25,12 +25,12 @@
       }
 
       :root {
-        --green: #2a7d6b;
-        --green-dk: #1f5e50;
-        --green-lt: #e8f4f1;
+        --green: #1b2e55;
+        --green-dk: #0f1d3a;
+        --green-lt: #eaf0fb;
         --text: #1a1a1a;
-        --muted: #555;
-        --border: #d4e9e4;
+        --muted: #4a5670;
+        --border: #ccd8ec;
         --white: #ffffff;
         --radius: 8px;
         --phone: "513 949 236";
@@ -124,7 +124,7 @@
           135deg,
           var(--green-dk) 0%,
           var(--green) 60%,
-          #3da18c 100%
+          #2b4a83 100%
         );
         color: var(--white);
         padding: 3rem 1.5rem;
@@ -180,7 +180,7 @@
       .hero__trust-item::before {
         content: "✓";
         font-weight: 700;
-        color: #7de8d4;
+        color: #9bb6e4;
       }
 
       .hero__cta {
@@ -204,7 +204,7 @@
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
       }
 
-      /* ─── Quick-contact card ─── */
+      /* ─── Hero booking card (Booksy-style) ─── */
       .qform {
         background: var(--white);
         border-radius: 12px;
@@ -213,68 +213,119 @@
         color: var(--text);
       }
 
+      .qform__head {
+        display: flex;
+        gap: 0.85rem;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .qform__avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        object-fit: cover;
+        border: 1.5px solid var(--border);
+        padding: 0.35rem;
+        background: #f8fbff;
+      }
+
       .qform__heading {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         font-weight: 800;
         color: var(--green-dk);
-        margin-bottom: 0.25rem;
-        text-align: center;
+        line-height: 1.25;
       }
 
-      .qform__sub {
+      .qform__meta {
+        color: var(--muted);
+        font-size: 0.84rem;
+        line-height: 1.45;
+      }
+
+      .qform__rating {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin: 0.8rem 0 1rem;
+        color: #1f3d74;
+        font-weight: 700;
+        font-size: 0.92rem;
+      }
+
+      .qform__rating-stars {
+        color: #f6b21a;
+        letter-spacing: 1px;
+      }
+
+      .qform__services {
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        padding: 0.8rem 0.9rem;
+        margin-bottom: 1rem;
+        background: #f9fbff;
+      }
+
+      .qform__services-title {
         font-size: 0.8rem;
         color: var(--muted);
-        text-align: center;
-        margin-bottom: 1.25rem;
-      }
-
-      .qform label {
-        display: block;
-        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
         font-weight: 700;
-        margin-bottom: 0.3rem;
-        color: var(--text);
+        margin-bottom: 0.6rem;
       }
 
-      .qform input,
-      .qform select {
+      .qform__service-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.88rem;
+        margin-bottom: 0.45rem;
+      }
+
+      .qform__service-row:last-child {
+        margin-bottom: 0;
+      }
+
+      .qform__service-price {
+        font-weight: 800;
+        color: var(--green-dk);
+        white-space: nowrap;
+      }
+
+      .qform__actions {
+        display: flex;
+        gap: 0.6rem;
+      }
+
+      .qform__submit,
+      .qform__call {
         width: 100%;
-        padding: 0.7rem 0.9rem;
-        border: 1.5px solid var(--border);
-        border-radius: var(--radius);
+        text-align: center;
         font-size: 1rem;
-        margin-bottom: 1rem;
-        color: var(--text);
-        background: var(--white);
-        transition: border-color 0.2s;
-        -webkit-appearance: none;
-        appearance: none;
-      }
-
-      .qform select {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 0.9rem center;
-        padding-right: 2.5rem;
-      }
-
-      .qform input:focus,
-      .qform select:focus {
-        outline: none;
-        border-color: var(--green);
+        font-weight: 700;
+        padding: 0.82rem;
+        border-radius: var(--radius);
+        transition:
+          transform 0.15s,
+          background 0.2s;
       }
 
       .qform__submit {
-        width: 100%;
         background: var(--green);
         color: var(--white);
-        font-size: 1.05rem;
-        font-weight: 700;
-        padding: 0.85rem;
-        border: none;
-        border-radius: var(--radius);
-        cursor: pointer;
-        transition: background 0.2s;
+      }
+
+      .qform__call {
+        background: #edf3ff;
+        color: #18305d;
+        border: 1.5px solid #c8d6f0;
+      }
+
+      .qform__submit:hover,
+      .qform__call:hover {
+        transform: translateY(-1px);
       }
 
       .qform__submit:hover {
@@ -282,10 +333,9 @@
       }
 
       .qform__note {
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         color: var(--muted);
-        text-align: center;
-        margin-top: 0.75rem;
+        margin-top: 0.85rem;
       }
 
       /* ─── Trust bar ─── */
@@ -345,6 +395,106 @@
         gap: 1rem;
       }
 
+      .long-copy {
+        margin-top: 2rem;
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        padding: 1.25rem 1.5rem;
+        background: #fdfefe;
+      }
+
+      .long-copy h3 {
+        color: var(--green-dk);
+        margin-bottom: 0.8rem;
+        font-size: 1.15rem;
+      }
+
+      .long-copy p {
+        margin-bottom: 0.9rem;
+        font-size: 0.95rem;
+      }
+
+      .long-copy ul {
+        padding-left: 1.2rem;
+      }
+
+      .long-copy li {
+        margin-bottom: 0.45rem;
+      }
+
+      .areas {
+        padding: 3rem 1.5rem;
+        background: #f8fcfb;
+      }
+
+      .areas__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .areas__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+      }
+
+      .area-card {
+        background: var(--white);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        padding: 1.25rem 1.25rem 1rem;
+      }
+
+      .area-card h3 {
+        color: var(--green-dk);
+        margin-bottom: 0.65rem;
+        font-size: 1.05rem;
+      }
+
+      .area-card ul {
+        padding-left: 1.15rem;
+      }
+
+      .area-card li {
+        margin-bottom: 0.4rem;
+        font-size: 0.92rem;
+      }
+
+      .pricing {
+        padding: 3rem 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .pricing__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+
+      .price-card {
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        padding: 1.2rem 1.25rem;
+        background: var(--white);
+      }
+
+      .price-card h3 {
+        color: var(--green-dk);
+        margin-bottom: 0.7rem;
+        font-size: 1.02rem;
+      }
+
+      .price-card p {
+        margin-bottom: 0.55rem;
+        font-size: 0.93rem;
+      }
+
+      .price-highlight {
+        font-weight: 800;
+        color: var(--green-dk);
+      }
+
       .service-card {
         border: 1.5px solid var(--border);
         border-radius: 10px;
@@ -360,7 +510,7 @@
 
       .service-card:hover {
         border-color: var(--green);
-        box-shadow: 0 4px 16px rgba(42, 125, 107, 0.12);
+        box-shadow: 0 4px 16px rgba(27, 46, 85, 0.14);
       }
 
       .service-card__icon {
@@ -450,7 +600,7 @@
         transition:
           background 0.2s,
           transform 0.15s;
-        box-shadow: 0 4px 16px rgba(42, 125, 107, 0.3);
+        box-shadow: 0 4px 16px rgba(27, 46, 85, 0.3);
       }
 
       .btn-call:hover {
@@ -474,7 +624,7 @@
       }
 
       footer a {
-        color: #7de8d4;
+        color: #9bb6e4;
       }
 
       /* ─── Responsive ─── */
@@ -509,6 +659,12 @@
         }
         .hero__title {
           font-size: 1.7rem;
+        }
+        .qform {
+          padding: 1.2rem 1rem;
+        }
+        .qform__actions {
+          flex-direction: column;
         }
         .trustbar__inner {
           gap: 0.75rem 1.5rem;
@@ -565,11 +721,13 @@
       <div class="hero__inner">
         <!-- Left: headline + trust + CTA -->
         <div>
-          <p class="hero__eyebrow">Gabinet psychoterapii · Rumia i Online</p>
+          <p class="hero__eyebrow">
+            Gabinet psychoterapii · Rumia · Sopot · Online
+          </p>
 
           <h1 class="hero__title">
             Psychoterapeuta<br />
-            w <em>Rumi</em>
+            Rumia, Sopot, online
           </h1>
 
           <ul class="hero__trust" role="list">
@@ -580,10 +738,15 @@
             <li class="hero__trust-item">
               Superwizowana praktyka terapeutyczna
             </li>
-            <li class="hero__trust-item">Rumia · Wejherowo i okolice</li>
+            <li class="hero__trust-item">Rumia · Sopot i okolice</li>
           </ul>
 
-          <a href="tel:513949236" class="hero__cta">
+          <a
+            href="https://booksy.com/pl-pl/348693_pracownia-rozwoju-marta-dzikiewicz_psychoterapia_21554_sopot#ba_s=sr_1"
+            class="hero__cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               width="20"
               height="20"
@@ -599,77 +762,66 @@
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.71a16 16 0 006.29 6.29l1.26-1.26a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
               />
             </svg>
-            Zadzwoń: 513 949 236
+            Zarezerwuj na Booksy
           </a>
         </div>
 
-        <!-- Right: 3-field form -->
+        <!-- Right: booking card -->
         <div class="qform">
-          <p class="qform__heading">Umów pierwszą wizytę</p>
-          <p class="qform__sub">Oddzwonię w ciągu 24&nbsp;h</p>
-
-          <form action="https://formspree.io/f/xjkwdwge" method="POST">
-            <!-- honeypot anti-spam -->
-            <input
-              type="text"
-              name="_gotcha"
-              style="display: none"
-              tabindex="-1"
-              autocomplete="off"
+          <div class="qform__head">
+            <img
+              src="img/Logo.png"
+              alt="Pracownia Rozwoju Marta Dzikiewicz"
+              class="qform__avatar"
+              width="64"
+              height="64"
             />
+            <div>
+              <p class="qform__heading">Pracownia Rozwoju Marta Dzikiewicz</p>
+              <p class="qform__meta">
+                Online <br />Tatrzańska 19, Sopot <br />H. Dąbrowskiego 5/21,
+                Rumia
+              </p>
+            </div>
+          </div>
 
-            <label for="q-name">Imię</label>
-            <input
-              type="text"
-              id="q-name"
-              name="imie"
-              autocomplete="given-name"
-              placeholder="np. Anna"
-              required
-            />
+          <div
+            class="qform__rating"
+            aria-label="Ocena 5.0 na podstawie 5 opinii"
+          >
+            <span class="qform__rating-stars">★★★★★</span>
+            <span>5.0 (5 opinii)</span>
+          </div>
 
-            <label for="q-phone">Telefon</label>
-            <input
-              type="tel"
-              id="q-phone"
-              name="telefon"
-              autocomplete="tel"
-              placeholder="np. 600 123 456"
-              required
-            />
+          <!-- <div class="qform__services">
+            <p class="qform__services-title">Najczęściej rezerwowane</p>
+            <p class="qform__service-row">
+              <span>Psychoterapia indywidualna</span>
+              <span class="qform__service-price">180 zł / 50 min</span>
+            </p>
+            <p class="qform__service-row">
+              <span>Psychoterapia rodzinna / par</span>
+              <span class="qform__service-price">300 zł / 80 min</span>
+            </p>
+            <p class="qform__service-row">
+              <span>Konsultacja rodzicielska</span>
+              <span class="qform__service-price">180 zł / 50 min</span>
+            </p>
+          </div> -->
 
-            <label for="q-service">Czego dotyczy zgłoszenie</label>
-            <select id="q-service" name="zgloszenie" required>
-              <option value="" selected disabled>Wybierz temat</option>
-              <option value="psychoterapia_doroslych">
-                Psychoterapia dorosłych
-              </option>
-              <option value="psychoterapia_par">Psychoterapia par</option>
-              <option value="psychoterapia_dziecka">
-                Psychoterapia dziecka / młodzieży
-              </option>
-              <option value="konsultacja_rodzicielska">
-                Konsultacja rodzicielska
-              </option>
-              <option value="tus">
-                Trening Umiejętności Społecznych (TUS)
-              </option>
-              <option value="terapia_reki">Terapia ręki</option>
-              <option value="inne">Inne</option>
-            </select>
-
-            <button type="submit" class="qform__submit">
-              Wyślij zgłoszenie →
-            </button>
-          </form>
+          <div class="qform__actions">
+            <a
+              href="https://booksy.com/pl-pl/348693_pracownia-rozwoju-marta-dzikiewicz_psychoterapia_21554_sopot#ba_s=sr_1"
+              class="qform__submit"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Zarezerwuj</a
+            >
+            <a href="tel:513949236" class="qform__call">Zadzwoń</a>
+          </div>
 
           <p class="qform__note">
-            Lub zadzwoń bezpośrednio:
-            <a
-              href="tel:513949236"
-              style="color: var(--green); font-weight: 700"
-              >513 949 236</a
-            >
+            Wizyty po wcześniejszej rezerwacji: online, Rumia lub Sopot.
           </p>
         </div>
       </div>
@@ -762,7 +914,7 @@
           >
             <polyline points="20 6 9 17 4 12" />
           </svg>
-          Rumia · Wejherowo
+          Rumia · Sopot
         </div>
       </div>
     </div>
@@ -842,6 +994,220 @@
               </p>
             </div>
           </a>
+        </div>
+
+        <div class="long-copy">
+          <h3>O mnie i sposobie pracy</h3>
+          <p>
+            Nazywam się Marta Dzikiewicz. Jestem psychoterapeutą w nurcie
+            integracyjnym w trakcie szkolenia, nauczycielem, trenerem TUS,
+            terapeutą ręki oraz trenerem treningu uważności.
+          </p>
+          <p>
+            W pracy z dziećmi, młodzieżą i dorosłymi stawiam na podejście
+            holistyczne. Uważam, że aby efektywnie i skutecznie wspierać rozwój
+            i przezwyciężać trudności, warto zadbać o całość człowieka: emocje,
+            doświadczenia, relacje, ciało i codzienne funkcjonowanie.
+          </p>
+          <p>
+            Towarzyszę w rozwiązywaniu trudności, odkrywaniu potencjału,
+            budowaniu poczucia własnej wartości i sprawczości. Moja praca
+            pozostaje w stałej superwizji, co zapewnia jej zgodność z
+            najlepszymi standardami terapeutycznymi.
+          </p>
+        </div>
+      </section>
+
+      <section class="areas">
+        <div class="areas__inner">
+          <h2 class="section-title">Szczegółowe obszary wsparcia</h2>
+          <p class="section-sub">
+            Zakres pracy z dziećmi, młodzieżą, dorosłymi i rodziną
+          </p>
+
+          <div class="areas__grid">
+            <article class="area-card">
+              <h3>Praca z dziećmi i młodzieżą</h3>
+              <ul>
+                <li>wsparcie terapeutyczne i regulacja emocji,</li>
+                <li>rozwijanie umiejętności społecznych (TUS),</li>
+                <li>terapia ręki i holistyczna praca z ciałem oraz czuciem,</li>
+                <li>budowanie poczucia własnej wartości i sprawczości,</li>
+                <li>uważne towarzyszenie dziecku w jego rozwoju.</li>
+              </ul>
+            </article>
+
+            <article class="area-card">
+              <h3>Praca z dorosłymi</h3>
+              <ul>
+                <li>
+                  psychoterapia indywidualna w nurcie integracyjnym (online i
+                  stacjonarnie),
+                </li>
+                <li>
+                  wsparcie przy zaburzeniach lękowych, depresyjnych, ADHD, ADD,
+                  DDD, DDA oraz trudnościach relacyjnych,
+                </li>
+                <li>
+                  praca z doświadczeniami trudnymi i traumatycznymi, również z
+                  okresu dzieciństwa,
+                </li>
+                <li>
+                  towarzyszenie w budowaniu poczucia wartości, równowagi i
+                  sprawczości.
+                </li>
+              </ul>
+            </article>
+
+            <article class="area-card">
+              <h3>Praca z rodziną / systemowo</h3>
+              <ul>
+                <li>konsultacje wychowawcze online i stacjonarnie,</li>
+                <li>wsparcie w budowaniu zdrowej komunikacji i granic,</li>
+                <li>praca nad relacją rodzic-dziecko,</li>
+                <li>
+                  spojrzenie na rodzinę jako system, w którym każda zmiana ma
+                  znaczenie,
+                </li>
+                <li>
+                  warsztaty dla rodziców: komunikacja, emocje, granice,
+                  wychowanie bez kar.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="long-copy" id="online">
+            <h3>Psychoterapia online</h3>
+            <p>
+              Psychoterapia to proces, w którym w bezpiecznej i poufnej relacji
+              można przyjrzeć się swoim doświadczeniom, emocjom i mechanizmom
+              wpływającym na codzienne funkcjonowanie. Prowadzę terapię
+              indywidualną dorosłych, dzieci i młodzieży.
+            </p>
+            <p>
+              Spotkania odbywają się online (Google Meet lub WhatsApp), zwykle
+              raz w tygodniu. Sesja trwa 50 minut. Pierwsze spotkania mają
+              charakter konsultacyjny - pozwalają określić potrzeby i dobrać
+              odpowiednią formę pomocy. W przypadku dzieci i młodzieży pierwsza
+              konsultacja zwykle obejmuje rodzica lub opiekuna.
+            </p>
+            <p>
+              Jeśli rozważasz rozpoczęcie psychoterapii dla siebie, dziecka lub
+              nastolatka, zapraszam do kontaktu. Wspólnie ustalimy, jaka forma
+              pracy będzie najbardziej adekwatna do Waszej sytuacji.
+            </p>
+          </div>
+
+          <div class="long-copy">
+            <h3>Trening Umiejętności Społecznych (TUS)</h3>
+            <p>
+              TUS to forma pracy indywidualnej lub grupowej dla każdej grupy
+              wiekowej, ukierunkowana na uczenie się dobrego funkcjonowania
+              społecznego, rozwijanie relacji z samym sobą i innymi oraz
+              niwelowanie trudności w tych obszarach.
+            </p>
+            <p>
+              W ramach TUS rozwijane są m.in. komunikacja, umiejętności
+              prospołeczne, radzenie sobie w trudnych sytuacjach, asertywność,
+              rozwiązywanie konfliktów oraz praca z emocjami i budowaniem
+              tożsamości.
+            </p>
+          </div>
+
+          <div class="long-copy">
+            <h3>Terapia ręki</h3>
+            <p>
+              Terapia ręki wspiera rozwój i usprawnianie czynności manualnych,
+              koordynacji oko-ręka, grafomotoryki, planowania ruchu i czucia. To
+              praca angażująca nie tylko dłoń, ale również całą kończynę, tułów
+              i kontrolę posturalną.
+            </p>
+            <p>
+              Wskazaniem do terapii są m.in. trudności w planowaniu ruchowym,
+              problemy z koordynacją obu rąk, nieadekwatna siła nacisku,
+              trudności grafomotoryczne, obniżona koncentracja oraz zaburzenia
+              napięcia mięśniowego.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="cennik">
+        <h2 class="section-title">Cennik</h2>
+        <p class="section-sub">
+          Najczęściej wybierane konsultacje i formy wsparcia
+        </p>
+
+        <div class="pricing__grid">
+          <article class="price-card">
+            <h3>Psychoterapia i konsultacje</h3>
+            <p>
+              Psychoterapia indywidualna dla dorosłych (50 min, online/
+              stacjonarnie): <span class="price-highlight">180 zł</span>
+            </p>
+            <p>
+              Psychoterapia dzieci i młodzieży lub rodzinna (50 min,
+              online/stacjonarnie): <span class="price-highlight">180 zł</span>
+            </p>
+            <p>
+              Sesja rodzinna (80 min, online/stacjonarnie):
+              <span class="price-highlight">300 zł</span>
+            </p>
+            <p>
+              Konsultacja rodzicielska (50 min, online/stacjonarnie):
+              <span class="price-highlight">180 zł</span>
+            </p>
+            <p>
+              Warsztaty dla rodziców (120 min):
+              <span class="price-highlight">220 zł / osoba</span>
+            </p>
+          </article>
+
+          <article class="price-card">
+            <h3>Zajęcia dla dzieci</h3>
+            <p>
+              TUS grupowo: <span class="price-highlight">400 zł / msc</span>
+            </p>
+            <p>
+              TUS indywidualnie:
+              <span class="price-highlight">560 zł / msc</span>
+            </p>
+            <p>
+              Trening uważności grupowo:
+              <span class="price-highlight">360 zł / msc</span>
+            </p>
+            <p>
+              Trening uważności indywidualnie:
+              <span class="price-highlight">520 zł / msc</span>
+            </p>
+            <p>
+              Terapia ręki indywidualnie:
+              <span class="price-highlight">400 zł / msc</span>
+            </p>
+          </article>
+
+          <article class="price-card">
+            <h3>Zajęcia wspierające i promocje</h3>
+            <p>
+              Rozwój motoryki małej i dużej, koordynacji, koncentracji i czucia
+              głębokiego (50 min):
+              <span class="price-highlight">520 zł / msc</span>
+            </p>
+            <p>
+              Zajęcia wspomagające uczenie się (czytanie, pisanie, koncentracja,
+              organizacja pracy):
+              <span class="price-highlight">520 zł / msc</span>
+            </p>
+            <p>
+              Pierwsza sesja psychoterapeutyczna dla nowych pacjentów:
+              <span class="price-highlight">110 zł</span>
+            </p>
+            <p>
+              Zajęcia terapeutyczne drugiego dziecka:
+              <span class="price-highlight">-15%</span>
+            </p>
+          </article>
         </div>
       </section>
 
